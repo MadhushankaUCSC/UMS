@@ -34,13 +34,13 @@ button{
 }
 .card{
 	width: 350px;
-	margin: 100px auto;
+	margin: 0px auto;
 
 }
 .background{
 	width: 100%;
-	height: 100%;
+	height: 780px;
 	margin: 0;
-	padding: 20px;
+	padding-top: 200px;
 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/login.jpg");
 }
