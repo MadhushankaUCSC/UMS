@@ -43,8 +43,8 @@ button{
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	padding: 50px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/login.jpg");
+	padding: 20px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/signup.jpg");
 }
 .crd{
 	width: 600px;
