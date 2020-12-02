@@ -1,0 +1,52 @@
+* {box-sizing: border-box}
+body{
+	margin: 0;
+}
+label{
+	display: inline-block;
+	width: 150px;
+	padding: 15px;
+	font-size: 20px;
+	margin-left: 45px;
+	color: white;
+}
+h2{
+color: white;	
+}
+p{
+	color: lightgray;
+	text-align: center;
+}
+a{
+	padding: 5px;
+	color: orange;
+}
+input{
+	display: inline-block;
+	width: 225px;
+	padding: 10px;
+	margin-left: 35px;
+}
+button{
+	display: block;
+	width: 230px;
+	padding: 10px;
+	background-color: lightblue;
+	margin-top: 30px;
+	cursor: pointer;
+	margin-left: 185px;
+}
+.btn:hover{
+  background-color:  #008CBA;
+}
+.body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 50px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/login.jpg");
+}
+.crd{
+	width: 600px;
+	margin: 100px auto;
+}
