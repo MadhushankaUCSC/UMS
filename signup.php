@@ -1,6 +1,8 @@
+
 <?php 
+
  require_once('inc/dbconnect.php');  //include database connection
- ?>
+  ?>
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +12,7 @@
 </head>
 <body>
 	<div class="body">
-		<form action="" method="post" onsubmit="submit">
+		<form action="insert_signup_data.php" method="post" >
 			<fieldset class="crd">
 				<legend><h2>SIGN UP</h2></legend>
 				<label for="first_name">First Name</label>

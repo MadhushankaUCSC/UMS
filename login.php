@@ -12,7 +12,7 @@
 				<fieldset>
 					<legend><h2>LOGIN</h2></legend>
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email"  placeholder="Enter Email">
+					<input type="email" name="email" id="email"  placeholder="Enter Email" value="<?php echo $_POST['user_email']; ?>">
 					<label for="password">Password</label>
 					<input type="password" name="password" id="password" placeholder="Enter Password">
 					<button  class="btn" type="submit" id="submit">Log In</button><br>
