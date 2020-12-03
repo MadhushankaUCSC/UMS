@@ -1,3 +1,7 @@
+<?php 
+ require_once('inc/dbconnect.php');  //include database connection
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +10,7 @@
 </head>
 <body>
 	<div class="body">
-		<form action="" method="post">
+		<form action="" method="post" onsubmit="submit">
 			<fieldset class="crd">
 				<legend><h2>SIGN UP</h2></legend>
 				<label for="first_name">First Name</label>
@@ -27,7 +31,7 @@
 				<label for="password">Password</label>
 				<input type="password" name="password" id="password" placeholder="Enter Password"><br>
 
-				<button class="btn" type="submit" id="submit">Register</button>
+				<button class="btn" type="submit" name="submit" id="submit">Register</button>
 				<p>Already have an account<a href="login.php">Log In</a></p>
 
 				
@@ -37,3 +41,4 @@
 
 </body>
 </html>
+<?php mysqli_close($connect); ?> <!--close data base connection-->
