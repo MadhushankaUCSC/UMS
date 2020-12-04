@@ -18,10 +18,24 @@ body {
   height: 520px;
 }
 
+.header1 {
+  padding: 120px;
+  text-align: center;
+  /*background: #1abc9c;*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header.jpg");
+  color: white;
+  height: 1000px;
+}
+
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 45px;
 }
+.header1 h1 {
+  font-size: 45px;
+  font-family: brie;
+}
+
 .header p{
   font-size: 18px;
   font-family:comic sans ms;

@@ -1,5 +1,5 @@
  
-
+<?php session_start(); ?>
 <?php 
 
  require_once('inc/dbconnect.php');  //include database connection
@@ -7,16 +7,18 @@
 <?php 
 
 $user_name=$_POST['email'];
-$user_password=$_POST['password'];
+$user_password=   sha1($_POST['password']);  //hashed password
 //echo $user_name;
-$query1="SELECT email FROM users WHERE email='{$user_name}' LIMIT 1 ";
+$query1="SELECT * FROM users WHERE email='{$user_name}' AND password='{$user_password}' LIMIT 1 ";
 
-//$user=mysqli_fetch_assoc($result);
+
 
 if(isset($_POST['submit'])){
 	$result=mysqli_query($connect,$query1);
-	if(mysqli_num_rows($result)==1){
-		header("Location:home.php");
+	$user=mysqli_fetch_assoc($result);
+	if(mysqli_num_rows($result)==1){ //check if there is a result
+		$_SESSION['first_name']=$user['first_name'];//create session variable
+		header("Location:logedhome.php");//redirect
 	}
 }	
  ?>
