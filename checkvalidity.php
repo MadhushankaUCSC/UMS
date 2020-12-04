@@ -10,11 +10,12 @@ $user_name=$_POST['email'];
 $user_password=$_POST['password'];
 //echo $user_name;
 $query1="SELECT email FROM users WHERE email='{$user_name}' LIMIT 1 ";
-$result=mysqli_query($connect,$query1);
+
 //$user=mysqli_fetch_assoc($result);
 
 if(isset($_POST['submit'])){
-	if($result){
+	$result=mysqli_query($connect,$query1);
+	if(mysqli_num_rows($result)==1){
 		header("Location:home.php");
 	}
 }	
