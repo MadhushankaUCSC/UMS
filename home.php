@@ -11,13 +11,13 @@
 
 <div class="header">
   <h1>Simple User Management System</h1>
-  <p>website created by me.</p>
+ 
 </div>
 
 <div class="navbar">
   <a href="home.php" class="active">Home</a>
-  <a href="contact_us.php">Contact us</a>
-  <a href="about_us.php">About us</a>
+  <a href="contact_us.php">Contact</a>
+  <a href="about_us.php">About</a>
   <a href="signup.php" class="right">Sign up</a>
   <a href="login.php?user_email=ww" class="right">Sign in</a>
 </div>
