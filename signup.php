@@ -1,8 +1,5 @@
 
-<?php 
 
- require_once('inc/dbconnect.php');  //include database connection
-  ?>
 
 <!DOCTYPE html>
 <html>
@@ -43,4 +40,3 @@
 
 </body>
 </html>
-<?php mysqli_close($connect); ?> <!--close data base connection-->

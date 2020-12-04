@@ -15,25 +15,19 @@
 	$password=$_POST['password'];
 	$hased_password=sha1($password);
 
-		
-	//print_r($_POST);
+	$passwd= base64_encode($password);//encode password
+	$eml= base64_encode($email); //encode email
+	
+	
 
 	if (isset($_POST['submit'])) {
 	$query="INSERT INTO users(first_name,last_name,email,telephone,dob,password) VALUES('{$first_name}','{$last_name}','{$email}','{$tele}','{$dob}','{$hased_password}')";
-	$result=mysqli_query($connect,$query);
-	header("Location: login.php?user_email=$email&user_password=$password");
-	
+
+	$result=mysqli_query($connect,$query);//insert data to database
+
+	header("Location: login.php?user_email=$eml&user_password=$passwd");//send encoded email and password to login.php
 		
 	}
  ?>
- <?php
-	/*if (isset($_POST['log'])){
-	header("Location: login.php?user_email=ww&user_password=11");
-	}
- if(isset($_GET['user_email'])){
-    $link=$_GET['user_email'];
-   
-        header("Location: login.php?user_email= $link");
-    }*/
- ?>
+
  <?php mysqli_close($connect); ?> <!--close data base connection-->
