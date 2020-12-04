@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/home.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -25,14 +25,22 @@
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+   
+   <div class="card">
+  <img src="images/profile.jpg" alt="John" style="width:100%">
+  <h4>W.K.B.K.Madhushanka</h4>
+  <p class="title">Undergraduate</p>
+  <p>UCSC</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
+   
+   
   </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
@@ -41,16 +49,18 @@
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+   
   </div>
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  
+  <a href="#"><i class="fa fa-facebook-official fa-lg"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p fa-lg"></i></a>
+  <a href="#"><i class="fa fa-twitter fa-lg" ></i></a>
+  <a href="#"><i class="fa fa-flickr fa-lg" ></i></a>
+  <a href="#"><i class="fa fa-linkedin fa-lg" ></i></a>
+  <p>ffrf</p>
 </div>
 
 </body>
