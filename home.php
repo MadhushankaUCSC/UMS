@@ -60,7 +60,7 @@
   <a href="#"><i class="fa fa-twitter fa-lg" ></i></a>
   <a href="#"><i class="fa fa-flickr fa-lg" ></i></a>
   <a href="#"><i class="fa fa-linkedin fa-lg" ></i></a>
-  <p>ffrf</p>
+  <p>© 2019 Copyright: UMS.com</p>
 </div>
 
 </body>
