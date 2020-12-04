@@ -6,7 +6,7 @@
 
 <?php
 
-if (isset($_POST['submit'])) {
+
 	$first_name= $_POST['first_name'];
 	$last_name=$_POST['last_name'];
 	$email=$_POST['email'];
@@ -18,11 +18,15 @@ if (isset($_POST['submit'])) {
 		
 	//print_r($_POST);
 
-	
+	if (isset($_POST['submit'])) {
 	$query="INSERT INTO users(first_name,last_name,email,telephone,dob,password) VALUES('{$first_name}','{$last_name}','{$email}','{$tele}','{$dob}','{$hased_password}')";
 	$result=mysqli_query($connect,$query);
-	header("Location: login.php?user_email=$email&user_password=$password");
+	//header("Location: login.php?user_email=$email&user_password=$password");
+	header("Location: login.php?user_email='ww'&user_password=11");
 	
+}
+else{
+header("Location: login.php?user_email='ww'&user_password=11");
 }
 
  ?>
