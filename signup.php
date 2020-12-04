@@ -34,7 +34,7 @@
 				<input type="password" name="password" id="password" placeholder="Enter Password" required=""><br>
 
 				<button class="btn" type="submit" name="submit" id="submit">Register</button>
-				<p>Already have an account<a href="login.php">Log In</a></p>
+				<p>Already have an account<a href="login.php?user_email=ww"  name="log" id="log">Log In</a></p>
 
 				
 			</fieldset>
