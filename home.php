@@ -12,7 +12,9 @@
 <body>
 
 <div class="header">
-  <h1>Simple User Management System</h1>
+ 
+  <div class="text">Simple User Management System</div>
+
  
 </div>
 

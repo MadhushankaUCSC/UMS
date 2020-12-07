@@ -18,6 +18,7 @@ if(isset($_POST['submit'])){
 	$user=mysqli_fetch_assoc($result);
 	if(mysqli_num_rows($result)==1){ //check if there is a result
 		$_SESSION['first_name']=$user['first_name'];//create session variable
+		$_SESSION['id']=$user['user_id'];
 		header("Location:logedhome.php");//redirect
 	}
 }	
